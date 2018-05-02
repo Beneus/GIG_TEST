@@ -1,0 +1,36 @@
+{
+  "name": "gig",
+  "version": "1.0.0",
+  "description": "GIG test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "author": "Benjamin Peña",
+  "license": "MIT",
+  "dependencies": {
+    "country-list": "^1.1.0",
+    "express": "^4.16.3",
+    "mocha": "^5.1.1"
+  },
+  "devDependencies": {
+    "zombie": "^6.1.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com"
+  },
+  "keywords": [
+    "GIG",
+    "TEST",
+    "javascript",
+    "NodeJs",
+    "Express",
+    "Mocha",
+    "Zombie",
+    "country-list"
+  ]
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GIG Test: Benjamín Peña</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+        <!-- Librería Google Fonts: Tipografía del sitio web -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <!-- Librerías Bootstrap: Estilos externos del sitio web -->
+             
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Estilos del sitio web -->
+
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+        
+  
+
+    </head>
+    <body>
+
+        <!-- Cabecera -->
+        <div class="page-header">
+                <div class="container">
+            <h1>Agenda</h1>
+            </div>
+        </div>
+        <div class="container">
+                <div class="ui error message hidden"></div>
+                <div class="ui success message hidden">
+                  <div class="header">Data saved in localStorage!</div>
+                  <p>You are in GIG contacts list.</p>
+                </div>
+            </div>
+       
+        <!--Formulario de entrada de datos-->
+        <div class="container">
+            <form id="contactForm" class="form-horizontal">
+                <div class="form-group">
+                    <label for="txtFirstName" class="col-lg-2 control-label">First Name</label>
+                    <div class="col-sm-4 field">
+                        <input type="text" name="FirstName" id="txtFirstName" class="form-control" placeholder="First Name" data-validation="required">
+                    </div>
+                </div>                    
+                <div class="form-group">
+                    <label for="txtSurname" class="col-lg-2 control-label">Surname</label>
+                    <div class="col-sm-4 field">
+                        <input type="text" name="Surname" id="txtSurname" class="form-control" placeholder="Surname" data-validation="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-sm-4 field">
+                        <input type="text" name="Email" id="txtEmail" class="form-control" placeholder="Email" data-validation="required email unique">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtCountry" class="col-lg-2 control-label">Country</label>
+                    <div class="col-sm-4 field">
+                        <!-- <input type="text" id="txtCountry" class="form-control" placeholder="Country"> -->
+
+                        <select id="selectCountry" name="Country" class="form-control" data-validation="required"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-sm-4">
+                        <input type="submit" value="Add" id="btnSave" class="btn btn-success"/>
+                        <input type="button" id="btnClear" class="btn btn-info" value="Reset" />
+                        <span id="counterContacts"></span>
+                    </div>
+                </div>
+            </form>
+        </div>      
+
+         <!--Tabla con la lista de datos-->
+         <div class="container">
+                <table id="tableList" class="table table-bordered"></table>
+            </div>
+        <!--Pie de página-->
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted credit">Benjamin Peña April, 2018</p>
+            </div>
+        </div>
+        <!-- Funciones Javascript -->
+     
+        <script type="text/javascript" src="javascript/agenda.js"></script>
+    </body>
+</html>

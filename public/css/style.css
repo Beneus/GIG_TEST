@@ -1,0 +1,45 @@
+/*Importar fuentes externas*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Montserrat);
+
+/*Aplicar la fuente y el color a todos los elementos del HTML*/
+*{
+    font-family: 'Open Sans', sans-serif !important;    
+    color: rgb(105, 16, 16);
+}
+
+/*Imagen de fondo del cuerpo HTML*/
+
+/*Pie de página HTML*/
+/* #footer {
+    /* position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: auto;  
+    text-align: right; 
+} */
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+/*Encabezado de la tabla de personas*/
+#tblList thead{
+    background: gray;
+    color: #FFF;
+}
+.hidden{
+    display: none;
+}
+/* .form-horizontal .field{
+} */
+.form-horizontal .error{
+background: #fff6f6;
+border-color: #e0b4b4;
+color: #9f3a38;
+/* border-radius: 11px 11px 11px 11px;
+-moz-border-radius: 11px 11px 11px 11px;
+-webkit-border-radius: 11px 11px 11px 11px; */
+border: 2px solid #ff0000;
+box-shadow: none;
+}
+.btn{
+    margin-right: 10px;
+}
